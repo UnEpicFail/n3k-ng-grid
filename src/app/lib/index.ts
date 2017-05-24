@@ -1,0 +1,1 @@
+export { N3kNgGridModule } from './src/n3k-ng-grid.module'

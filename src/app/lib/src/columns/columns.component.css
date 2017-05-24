@@ -1,0 +1,25 @@
+@import "columns-1.css";
+@import "columns-2.css";
+@import "columns-3.css";
+
+:host {
+    display: block;
+    overflow: hidden;
+}
+
+:host /deep/ .column {
+    box-sizing: border-box;
+    position: fixed;
+}
+
+/*:host /deep/ .column-1 {
+    background-color: red;
+}
+
+:host /deep/ .column-2 {
+    background-color: blue;
+}
+
+:host /deep/ .column-3 {
+    background-color: green;
+}*/
