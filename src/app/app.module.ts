@@ -7,7 +7,7 @@ import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 
-import { N3kNgGridModule } from './lib/n3k-ng-grid.module';
+import { N3kNgGridModule } from './lib/';
 import { Page1Component } from './page1/page1.component';
 import { Page2Component } from './page2/page2.component';
 
