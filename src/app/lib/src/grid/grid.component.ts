@@ -5,11 +5,16 @@ import { ColumnsComponent } from '../columns/columns.component';
 import { FooterComponent } from '../footer/footer.component';
 
 import { PositionService } from '../position.service'
+import { css } from './grid.component.css';
 
 @Component({
   selector: 'n3k-grid',
-  templateUrl: './grid.component.html',
-  styleUrls: ['./grid.component.css']
+  template: `
+    <div class='grid'>    
+      <ng-content></ng-content>
+    </div>
+  `,
+  styles: [ css ]
 })
 export class GridComponent implements OnInit {
 

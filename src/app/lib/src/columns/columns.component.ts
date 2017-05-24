@@ -6,14 +6,22 @@ import { Component,
   OnDestroy
 } from '@angular/core';
 import { Column1RefDirective } from './column-1-ref.directive'
-import { Column2RefDirective } from './column-2-ref.directive'
-import { Column3RefDirective } from './column-3-ref.directive'
-import { PositionService } from '../position.service'
+import { Column2RefDirective } from './column-2-ref.directive';
+import { Column3RefDirective } from './column-3-ref.directive';
+import { PositionService } from '../position.service';
+import { css } from './columns.component.css';
+import { column_1 } from './columns-1.css';
+import { column_2 } from './columns-2.css';
+import { column_3 } from './columns-3.css';
 
 @Component({
   selector: 'n3k-columns',
-  templateUrl: './columns.component.html',
-  styleUrls: ['./columns.component.css']
+  template: `
+    <div class='columns-{{columns}} context-{{context}}' [style.height]='height'>
+      <ng-content></ng-content>
+    </div>
+  `,
+  styles: [ css, column_1, column_2, column_3 ]
 })
 export class ColumnsComponent implements AfterContentInit , OnDestroy{
 

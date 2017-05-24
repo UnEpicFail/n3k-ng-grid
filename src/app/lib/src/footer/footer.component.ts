@@ -1,9 +1,13 @@
 import { Component, OnInit, ElementRef } from '@angular/core';
-
+import { css } from './footer.component.css';
 @Component({
   selector: 'n3k-footer',
-  templateUrl: './footer.component.html',
-  styleUrls: ['./footer.component.css']
+  template: `
+    <div class='footer'>
+      <ng-content></ng-content>
+    </div>
+  `,
+  styles: [ css ]
 })
 export class FooterComponent implements OnInit {
 

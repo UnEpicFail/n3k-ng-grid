@@ -1,10 +1,15 @@
 import { Component, OnInit, ElementRef } from '@angular/core';
 import { PositionService } from '../position.service'
+import { css } from './neck.component.css'
 
 @Component({
   selector: 'n3k-neck',
-  templateUrl: './neck.component.html',
-  styleUrls: ['./neck.component.css']
+  template: `
+    <div class='neck'>
+      <ng-content></ng-content>
+    </div>
+  `,
+  styles: [css]
 })
 export class NeckComponent implements OnInit {
 
