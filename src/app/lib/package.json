@@ -1,0 +1,15 @@
+
+
+{
+  "name": "n3k-ng-grid",
+  "version": "0.0.1",
+  "dependencies": {
+    "moment": "*"
+  },
+  "peerDependencies": {
+    "@angular/common": "*",
+    "@angular/compiler": "*",
+    "@angular/core": "*",
+    "@angular/forms": "*"
+  }
+}
