@@ -1,0 +1,15 @@
+{
+  "angularCompilerOptions": {
+    "flatModuleId": "@n3k-ng/grid",
+    "flatModuleOutFile": "index"
+  },
+  "compilerOptions": {
+    "target": "es2015",
+    "module": "es2015",
+    "declaration": true,
+    "sourceMap": true
+  },
+  "files": [
+    "src/public_api.ts"
+  ]
+}

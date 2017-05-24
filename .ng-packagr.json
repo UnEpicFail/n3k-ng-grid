@@ -1,0 +1,8 @@
+{
+  "src": "src/app/lib",
+  "dest": "dist/n3k-ng-grid",
+  "workingDirectory": ".ng_build",
+  "ngc": {
+    "tsconfig": "tsconfig.lib.json"
+  }
+}
