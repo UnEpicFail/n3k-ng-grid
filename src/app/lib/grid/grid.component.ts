@@ -59,7 +59,7 @@ export class GridComponent implements OnInit {
 
     }, 10)
     window.addEventListener('scroll', this.positions);
-    //window.addEventListener('resize', this.positions);
+    window.addEventListener('resize', this.positions);
     
   }
   checkColumn(column, data) {
