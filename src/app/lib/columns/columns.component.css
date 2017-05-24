@@ -12,7 +12,7 @@
     position: fixed;
 }
 
-:host /deep/ .column-1 {
+/*:host /deep/ .column-1 {
     background-color: red;
 }
 
@@ -22,4 +22,4 @@
 
 :host /deep/ .column-3 {
     background-color: green;
-}
+}*/

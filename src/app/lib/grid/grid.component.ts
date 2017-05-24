@@ -43,6 +43,10 @@ export class GridComponent implements OnInit {
     this.scrollPosition = this.body.scrollTop;
 
     this.positions = this.debounce(() => {
+      
+      if (!this.columns || !this.header || !this.neck || !this.footer)
+        return
+      
       let data = {
         sc:       this.body.scrollTop,
         border:   this.header.el.nativeElement.offsetHeight + this.neck.el.nativeElement.offsetHeight,
@@ -52,9 +56,14 @@ export class GridComponent implements OnInit {
         sd:       this.body.scrollTop - this.scrollPosition
       }
 
-      this.checkColumn(this.columns.column1, data);
-      this.checkColumn(this.columns.column2, data);
-      this.checkColumn(this.columns.column3, data);
+      if(this.columns.column1)
+        this.checkColumn(this.columns.column1, data);
+      
+      if(this.columns.column2)
+        this.checkColumn(this.columns.column2, data);
+      
+      if(this.columns.column3)
+        this.checkColumn(this.columns.column3, data);
       return true
 
     }, 10)
