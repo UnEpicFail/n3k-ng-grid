@@ -21,13 +21,6 @@ export class ColumnsComponent implements AfterContentInit , OnDestroy{
   height: string
   heights: number[] = [0]
 
-  positions
-  head 
-  neck 
-  footer
-  body 
-  scrollPosition
-
   @Input('context')
   context: string
 
@@ -60,7 +53,7 @@ export class ColumnsComponent implements AfterContentInit , OnDestroy{
           this.column2.getHeight(), 
           this.column3.getHeight(), 
         ]
-        this.height = this.heights.sort().slice(-1)[0] + 'px'
+        this.height = this.heights.sort(function(a, b){return a-b}).slice(-1)[0] + 'px'
       }, 1)  
     } else if ( typeof this.column2 !== 'undefined') {
       this.columns = 2;
@@ -69,7 +62,7 @@ export class ColumnsComponent implements AfterContentInit , OnDestroy{
           this.column1.getHeight(), 
           this.column2.getHeight(), 
         ]
-        this.height = this.heights.sort().slice(-1)[0] + 'px'
+        this.height = this.heights.sort(function(a, b){return a-b}).slice(-1)[0] + 'px'
       }, 1)    
     } else if ( typeof this.column2 !== 'undefined') {
       this.columns = 1;
@@ -77,7 +70,7 @@ export class ColumnsComponent implements AfterContentInit , OnDestroy{
         this.heights = [
           this.column1.getHeight(), 
         ]
-        this.height = this.heights.sort().slice(-1)[0] + 'px'
+        this.height = this.heights.sort(function(a, b){return a-b}).slice(-1)[0] + 'px'
       }, 1)    
     } else {
        return;
