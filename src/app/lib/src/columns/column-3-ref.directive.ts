@@ -22,7 +22,7 @@ export class Column3RefDirective{
     return window.getComputedStyle(this.el.nativeElement).display === 'none' ? 0 : this.el.nativeElement.offsetHeight
   }
   
-  setPostion(top, bottom) {
+  setPostion(top:string, bottom:string) {
     this.position.top = top
     this.position.bottom = bottom
     this.el.nativeElement.style.top = this.position.top

@@ -21,6 +21,13 @@ export class ColumnsComponent implements AfterContentInit , OnDestroy{
   height: string
   heights: number[] = [0]
 
+  positions
+  head 
+  neck 
+  footer
+  body 
+  scrollPosition
+
   @Input('context')
   context: string
 
@@ -64,7 +71,7 @@ export class ColumnsComponent implements AfterContentInit , OnDestroy{
         ]
         this.height = this.heights.sort(function(a, b){return a-b}).slice(-1)[0] + 'px'
       }, 1)    
-    } else if ( typeof this.column2 !== 'undefined') {
+    } else if ( typeof this.column1 !== 'undefined') {
       this.columns = 1;
       setTimeout(()=>{
         this.heights = [

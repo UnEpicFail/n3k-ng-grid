@@ -18,4 +18,4 @@ import { PositionService } from './position.service'
   declarations: [ColumnsComponent, Column1RefDirective, Column2RefDirective, Column3RefDirective, GridComponent, HeaderComponent, NeckComponent, FooterComponent],
   exports: [ColumnsComponent, Column1RefDirective, Column2RefDirective, Column3RefDirective, GridComponent, HeaderComponent, NeckComponent, FooterComponent]
 })
-export class N3kNgGridModule {}
+export class N3kNgGridModule { }

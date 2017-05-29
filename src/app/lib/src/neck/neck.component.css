@@ -2,3 +2,13 @@
     overflow: hidden;
     display: block;
 }
+
+:host {
+    padding: 0 0 0 4.2vw;
+}
+
+@media all and (max-width: 979px) {
+    :host {
+        padding: 0 0 0 8.4vw;
+    }
+}

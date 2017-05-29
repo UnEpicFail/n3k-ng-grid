@@ -5,6 +5,7 @@
     left: 0;
     width: 100vw;
     padding-left: 4.2vw;
+    padding-right: 17px;
 }
 
 :host .context-view.columns-1 /deep/ .column-2 {
@@ -23,6 +24,7 @@
     left: 0;
     width: 100vw;
     padding-left: 4.2vw;
+    padding-right: 17px;
 }
 
 :host .context-list.columns-1 /deep/ .column-2 {
